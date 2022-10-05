@@ -17,7 +17,7 @@ html {
     margin: 0;
     padding: 0;
     outline: 0;
-    /* cursor: url(../icons/elder_wand.png), default;*/
+    cursor: url(../icons/wand.png), default;
 }
 
 /* ----- Header menu ----- */
@@ -70,7 +70,7 @@ html {
     font-family: "HarryPotter";
     font-size: 50px;
     font-weight: lighter;
-    cursor: pointer;
+    cursor: url(../icons/wand_spell.png), default;
     padding-right: 8%;
     padding-top: 5px;
     text-shadow: 0px 10px 5px #000000;
@@ -89,6 +89,7 @@ html {
 
 #item__a:hover {
     color: beige;
+    cursor: url(../icons/wand_spell.png), default;
 }
 
 #hogwarts-logo {
@@ -169,7 +170,7 @@ a.button {
 }
 
 #section__btn:hover {
-    cursor: pointer;
+    cursor: url(../icons/wand_spell.png), default;
 }
 
 /* ----- Magias ----- */

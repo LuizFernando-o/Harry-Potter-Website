@@ -249,7 +249,7 @@ aside.context .explanation {
 
 .toggle-map {
     border: 2px solid;
-    margin: 100px auto 100px;
+    margin: 100px auto 150px;
     background-color: #000;
     opacity: 0.6;
     font-family: "HarryPotter";
@@ -262,6 +262,7 @@ aside.context .explanation {
 
 .toggle-map:hover {
     opacity: 1;
+    cursor: url(../icons/wand_spell.png), default;
 }
 
 .map-base.active .flap--1 {
