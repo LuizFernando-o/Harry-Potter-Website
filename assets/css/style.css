@@ -69,12 +69,12 @@ html {
     text-align: center;
     font-family: "HarryPotter";
     font-size: 50px;
+    font-weight: lighter;
     cursor: pointer;
     padding-right: 8%;
     padding-top: 5px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
     text-shadow: 0px 10px 5px #000000;
+
 }
 
 #menu__item:hover {
@@ -106,14 +106,13 @@ html {
     font-weight: lighter;
     color: white;
     text-align: center;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
+    text-shadow: 0px 10px 5px #000000;
 }
 
 
 /* ----- Personagens ----- */
 
-.secao {
+.section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border-radius: 10px;
@@ -123,7 +122,7 @@ html {
     text-align: center;
 }
 
-.secao__esquerda, .secao__direita {
+.section__left, .section__right {
     margin: 0 auto;
 }
 
@@ -131,21 +130,22 @@ html {
     width: 400px;
 }
 
-#secao__title {
+#section__title {
     font-size: 10rem;
     font-family: "HarryPotter";
     color: white;
     font-weight: lighter;
+    text-shadow: 0px 10px 5px #000000;
 }
 
-#secao__descricao {
+#section__description {
     font-size: 3rem;
     font-family: "hp__secundaria";
     color: white;
     font-weight: lighter;
 }
 
-#secao__btn {
+#section__btn {
     margin-top: 30px;
     width: 10rem;
     height: 10rem;
@@ -168,7 +168,7 @@ a.button {
     color: initial;
 }
 
-#secao__btn:hover {
+#section__btn:hover {
     cursor: pointer;
 }
 
@@ -181,24 +181,29 @@ a.button {
 
 /* ----- Mapa ----- */
 
-#mapa__img {
+#map__img {
     padding-top: 70px;
     width: 600px;
 }
 
 /* ----- Profeta ----- */
 
-#profeta__img {
+#prophet__img {
     width: 420px;
 }
 
-#secao__title__alt {
+#section__title__alt {
     font-size: 8rem;
     font-family: "HarryPotter";
     color: white;
     font-weight: lighter;
 }
 
+/* ----- Chapeu Seletor ----- */
+
+#sortinghat__img {
+    width: 400px;
+}
 
 /* Footer */
 
@@ -239,4 +244,22 @@ footer {
 .show-scroll {
     visibility: visible;
     bottom: 5rem;
+}
+
+/* ----- Mapa do Maroto ----- */
+.map__title, .map__phrase {
+    font-family: "HarryPotter";
+    text-align: center;
+    font-weight: lighter;
+    text-shadow: 0px 10px 5px #000000;
+}
+
+.map__title {
+    color: white;
+    font-size: 3rem;
+}
+
+.map__phrase {
+    color: orange;
+    font-size: 5rem;
 }

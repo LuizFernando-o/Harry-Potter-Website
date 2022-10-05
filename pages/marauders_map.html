@@ -1,0 +1,104 @@
+<link rel="stylesheet" href="../assets/css/marauders_map.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+
+
+<header>
+  <!-- Video de background fixo -->
+  <video autoplay muted loop id="hogwarts-bg">
+    <source src="../assets/videos/hogwarts-bg.mp4" type="video/mp4">
+    Seu navegador não suporta vídeos HTML5.
+  </video>
+  <div id="black-bg"></div>
+
+  <!-- Menu fixo no topo -->
+  <div id="menu">
+    <nav id="internal">
+
+      <ul id="main__menu">
+        <li id="menu__item" class="menu_op">
+          <a id="item__a" href="../index.html#prophet">Profeta Diario</a>
+        </li>
+        <li id="menu__item" class="menu_op">
+          <a id="item__a" href="../index.html#map">Mapa</a>
+        </li>
+        <li id="menu__item" class="menu_op">
+          <a id="item__a" href="../index.html#spell">Magias</a>
+        </li>
+        <li id="menu__item" class="menu_op">
+          <a id="item__a" href="../index.html#characters">Personagens</a>
+        </li>
+      </ul>
+      <!-- Hogwarts logo -->
+      <img id="hogwarts-logo" src="../assets/img/hogwarts-logo.png" alt="">
+    </nav>
+  </div>
+</header>
+
+<section class="space__content"></section>
+
+<h1 class="map__title">Ative o microfone e diga em voz alta</h1>
+<h1 class="map__phrase">"Eu juro solenemente nao fazer nada de bom."</h1>
+<h1 class="map__title">e veja a magia acontecer!</h1>
+<br><br>
+
+<div class="main-content">
+  <div class="map-base">
+    <div class="footsteps footsteps-1">
+      <div class="footstep left"></div>
+      <div class="footstep right"></div>
+      <div class="scroll-name">
+        <p>Severus Snape</p>
+      </div>
+    </div>
+    <div class="footsteps footsteps-2">
+      <div class="footstep left"></div>
+      <div class="footstep right"></div>
+      <div class="scroll-name">
+        <p>Harry Potter</p>
+      </div>
+    </div>
+    
+    <div class="map-flap flap--1">
+      <div class="map-flap__front"></div>
+      <div class="map-flap__back"></div>
+    </div>
+    <div class="map-flap flap--2">
+      <div class="map-flap__front"></div>
+      <div class="map-flap__back"></div>
+    </div>
+    <div class="map-side side-1">
+      <div class="front" style="--image: url('https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/8.png')"></div>
+      <div class="back"></div>
+    </div>
+    <div class="map-side side-2">
+      <div class="front" style="--image: url('https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/18.png')"></div>
+      <div class="back"></div>
+    </div>
+    <div class="map-side side-3">
+      <div class="front" style="--image: url('https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/7.png')"></div>
+      <div class="back"></div>
+    </div>
+    <div class="map-side side-4">
+      <div class="front" style="--image: url('https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/10.png')"></div>
+    </div>
+    <div class="map-side side-5">
+      <div class="front" style="--image: url('https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/6.png')"></div>
+      <div class="back"></div>
+    </div>
+    <div class="map-side side-6">
+      <div class="front" style="--image: url('https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/11.png')"></div>
+      <div class="back"></div>
+    </div>
+  </div>
+</div>
+<br><br>
+<h1 class="map__title">Para fechar o mapa diga</h1>
+<h1 class="map__phrase">"Malfeito feito!"</h1>
+
+<div class="instructions">
+  <button class="toggle-map js-toggle">Abrir/Fechar mapa manualmente</button>
+</div>
+
+<footer></footer>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="../assets/js/marauders_map.js"></script>
