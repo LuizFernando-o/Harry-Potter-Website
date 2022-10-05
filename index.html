@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Harry Potter</title>
+    <link rel="icon" type="image/x-icon" href="https://img1.picmix.com/output/stamp/normal/0/1/6/9/629610_3b897.png">
+</head>
+
+<body>
+
+    <header>
+        <!-- Video de background fixo -->
+        <video autoplay muted loop id="hogwarts-bg">
+            <source src="./assets/videos/hogwarts-bg.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+        <div id="black-bg"></div>
+
+        <!-- Menu fixo no topo -->
+        <div id="menu">
+            <nav id="internal">
+
+                <ul id="main__menu">
+                    <li id="menu__item" class="menu_op">
+                        <a id="item__a" href="#profeta">Profeta Diario</a>
+                    </li>
+                    <li id="menu__item" class="menu_op">
+                        <a id="item__a" href="#mapa">Mapa</a>
+                    </li>
+                    <li id="menu__item" class="menu_op">
+                        <a id="item__a" href="#magias">Magias</a>
+                    </li>
+                    <li id="menu__item" class="menu_op">
+                        <a id="item__a" href="#personagens">Personagens</a>
+                    </li>
+                </ul>
+                <!-- Hogwarts logo -->
+                <img id="hogwarts-logo"
+                    src="assets/img/hogwarts-logo.png" alt="">
+            </nav>
+        </div>
+    </header>
+
+    <section class="space__content"></section>
+
+    <!-- Conteudo inicial -->
+    <section class="initial__content">
+        <h1>Seja bem-vindo ao</h1>
+        <h1>Portal do Potter</h1>
+    </section>
+
+    <!-- Seção de personagens -->
+    <section id="personagens" class="space__content"></section>
+    <section class="secao">
+        <div class="secao__esquerda">
+            <img id="harry__img" src="assets/img/harry-potter.png">
+        </div>
+
+        <div class="secao__direita">
+            <h1 id="secao__title">Personagens</h1>
+            <h4 id="secao__descricao">Clique no selo abaixo e conheça os personagens mais marcantes da saga.</h4>
+            <button href="https://www.google.com.br" id="secao__btn"></button>
+        </div>
+    </section>
+
+    <!-- Seção de magias (direita e esquerda invertidos) -->
+    <section id="magias" class="space__content"></section>
+    <section class="secao">
+        <div class="secao__direita">
+            <h1 id="secao__title">Magias</h1>
+            <h4 id="secao__descricao">Clique no selo abaixo e conheça as magias mais utilizadas pelos bruxos de
+                Hogwarts.</h4>
+            <button href="https://www.google.com.br" id="secao__btn"></button>
+        </div>
+
+        <div class="secao__esquerda">
+            <img id="hermione__img"
+                src="assets/img/hermione-granger.png">
+        </div>
+    </section>
+
+    <!-- Seção de mapa -->
+    <section id="mapa" class="space__content"></section>
+    <section class="secao">
+
+        <div class="secao__esquerda">
+            <img id="mapa__img"
+                src="assets/img/marauders-map.png">
+        </div>
+
+        <div class="secao__direita">
+            <h1 id="secao__title">Mapa</h1>
+            <h4 id="secao__descricao">Veja quem está circulando pelos arredores do castelo.</h4>
+            <button href="https://www.google.com.br" id="secao__btn"></button>
+        </div>
+    </section>
+
+    <!-- Seção de profeta diario (direita e esquerda invertidos) -->
+    <section id="profeta" class="space__content"></section>
+    <section class="secao">
+        <div class="secao__direita">
+            <h1 id="secao__title__alt">Profeta Diario</h1>
+            <h4 id="secao__descricao">Veja as principais notícias do jornal mais informativo de todos.</h4>
+            <button href="https://www.google.com.br" id="secao__btn"></button>
+        </div>
+
+        <div class="secao__esquerda">
+            <img id="profeta__img" src="assets/img/daily-prophet.png">
+        </div>
+    </section>
+    <section class="space__content"></section>
+
+
+    <!-- Scroll top -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <img class="scrolltop__icon"
+            src="assets/icons/pomo-ouro.png">
+    </a>
+
+
+    <footer>
+
+    </footer>
+
+
+
+    <!-- Script -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

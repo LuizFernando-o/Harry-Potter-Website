@@ -1,0 +1,234 @@
+/* Adicionando a fonte de Harry Potter */
+@font-face {
+    font-family: "HarryPotter";
+    src: url(../fonts/HARRYP__.TTF);
+}
+
+@font-face {
+    font-family: "hp__secundaria";
+    src: url(../fonts/Anthony_Hunter.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    /* cursor: url(../icons/elder_wand.png), default;*/
+}
+
+/* ----- Header menu ----- */
+#hogwarts-bg {
+    position: fixed;
+    width: 1440px;
+    min-width: 100%;
+    min-height: 100%;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    z-index: -2;
+}
+
+#black-bg {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#menu {
+    box-shadow: 0px 4px 5px #222222;
+    height: auto;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-image: url(https://as1.ftcdn.net/v2/jpg/02/24/42/70/1000_F_224427040_Qzd7krdTZimcV3YosYjlUcXNIfzqxRZD.jpg);
+    background-repeat: initial;
+    background-size: 850px;
+}
+
+#internal {
+    height: 60px;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+#main__menu {
+    position: relative;
+}
+
+#menu__item {
+    float: right;
+    list-style: none;
+    height: auto;
+    text-align: center;
+    font-family: "HarryPotter";
+    font-size: 50px;
+    cursor: pointer;
+    padding-right: 8%;
+    padding-top: 5px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    text-shadow: 0px 10px 5px #000000;
+}
+
+#menu__item:hover {
+    transform: rotateX(360deg);
+    transition: ease-in-out 0.4s;
+}
+
+#item__a {
+    text-decoration: none;
+    color: white;
+}
+
+#item__a:hover {
+    color: beige;
+}
+
+#hogwarts-logo {
+    width: 125px;
+    padding-left: 50px;
+}
+
+.space__content {
+    height: 270px;
+}
+
+.initial__content h1 {
+    font-size: 8rem;
+    font-family: "HarryPotter";
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
+
+
+/* ----- Personagens ----- */
+
+.secao {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 10px;
+    width: 70rem;
+    height: 30rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.secao__esquerda, .secao__direita {
+    margin: 0 auto;
+}
+
+#harry__img {
+    width: 400px;
+}
+
+#secao__title {
+    font-size: 10rem;
+    font-family: "HarryPotter";
+    color: white;
+    font-weight: lighter;
+}
+
+#secao__descricao {
+    font-size: 3rem;
+    font-family: "hp__secundaria";
+    color: white;
+    font-weight: lighter;
+}
+
+#secao__btn {
+    margin-top: 30px;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    background-image: url(../img/hogwarts_seal.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-family: "HarryPotter";
+    font-size: 5rem;
+}
+
+#secao__btn:hover {
+    cursor: pointer;
+}
+
+/* ----- Magias ----- */
+
+#hermione__img {
+    width: 300px;
+    transform: rotateY(180deg);
+}
+
+/* ----- Mapa ----- */
+
+#mapa__img {
+    padding-top: 70px;
+    width: 600px;
+}
+
+/* ----- Profeta ----- */
+
+#profeta__img {
+    width: 420px;
+}
+
+#secao__title__alt {
+    font-size: 8rem;
+    font-family: "HarryPotter";
+    color: white;
+    font-weight: lighter;
+}
+
+
+/* Footer */
+
+footer {
+    box-shadow: 0px 4px 5px #222222;
+    z-index: 100;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    background-image: url(https://as1.ftcdn.net/v2/jpg/02/24/42/70/1000_F_224427040_Qzd7krdTZimcV3YosYjlUcXNIfzqxRZD.jpg);
+    background-repeat: initial;
+    background-size: 850px;
+    transform: rotateX(180deg);
+}
+
+/* Scroll Top */
+
+.scrolltop {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background-color: var(--container-color-alt);
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    visibility: hidden;
+}
+
+.scrolltop__icon {
+    width: 120px;
+    color: var(--text-color);
+}
+
+.show-scroll {
+    visibility: visible;
+    bottom: 5rem;
+}
