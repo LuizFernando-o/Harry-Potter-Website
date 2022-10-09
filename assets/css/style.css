@@ -123,7 +123,8 @@ html {
     text-align: center;
 }
 
-.section__left, .section__right {
+.section__left,
+.section__right {
     margin: 0 auto;
 }
 
@@ -248,7 +249,8 @@ footer {
 }
 
 /* ----- Mapa do Maroto ----- */
-.map__title, .map__phrase {
+.map__title,
+.map__phrase {
     font-family: "HarryPotter";
     text-align: center;
     font-weight: lighter;
@@ -267,14 +269,14 @@ footer {
 
 
 /* Seção dos personagens */
-.container {
+.container__characters {
     padding: 40px;
     margin: 0 auto;
     max-width: 1000px;
     text-align: center;
 }
 
-#character_title{
+#character_title {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-style: oblique;
@@ -305,12 +307,12 @@ footer {
 
 
 
-.character > img{
+.character>img {
     max-height: 100px;
     grid-area: image;
 }
 
-#searchBar{
+#searchBar {
     width: 100%;
     height: 32px;
     border-radius: 3px;
@@ -319,11 +321,69 @@ footer {
     font-size: 12px;
 }
 
-#searchWrapper{
+#searchWrapper {
     position: relative;
 }
 
-#searchWrapper::after{
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 2px;
+    right: 15px;
+}
+
+/* Seção das magias*/
+
+.container__spells {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#spells_title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+}
+
+#spellsList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.spell {
+    margin-top: 5%;
+    list-style-type: none;
+    background-color: #222222;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'name description'
+    ;
+    text-align: left;
+}
+
+#searchBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1 px solid;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
     content: '🔍';
     position: absolute;
     top: 2px;
