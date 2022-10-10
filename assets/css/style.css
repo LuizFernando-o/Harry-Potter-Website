@@ -98,7 +98,7 @@ html {
 }
 
 .space__content {
-    height: 270px;
+    height: 130px;
 }
 
 .initial__content h1 {
@@ -225,7 +225,7 @@ footer {
 
 .scrolltop {
     position: fixed;
-    right: 1rem;
+    left: 3rem;
     bottom: -20%;
     display: flex;
     justify-content: center;
@@ -245,7 +245,7 @@ footer {
 
 .show-scroll {
     visibility: visible;
-    bottom: 5rem;
+    bottom: 8rem;
 }
 
 /* ----- Mapa do Maroto ----- */
