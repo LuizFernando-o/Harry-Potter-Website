@@ -38,9 +38,9 @@ const displayCharacters = (characters) => {
             return `
             <li class="character">
                 <h2>${character.name}</h2>
-                <p>Escola de Magia: ${character.house}</p>
-                <p>Data de Nascimento: ${character.dateOfBirth}</p>              
-                <img src="${character.image}"></img>
+                <p>Escola de Magia: ${character.house!=""? character.house : "no-data"}</p>
+                <p>Data de Nascimento: ${character.dateOfBirth!=""? character.dateOfBirth : "no-data"}</p>              
+                <img src="${character.image!=""? character.image : '../assets/img/no-img.png'}"></img>
             </li>
         `;
         })
